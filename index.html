@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jithu K | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-500">
+
+  <header class="p-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Jithu K</h1>
+    <div>
+      <a href="assets/Jithu.pdf.pdf" download class="resume-button">Download Resume</a>
+      <button onclick="toggleTheme()" class="ml-4 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded">Toggle Theme</button>
+    </div>
+  </header>
+
+  <main class="px-6">
+    <section class="my-16 text-center gsap-fade">
+      <h2 class="text-4xl font-bold mb-4">Hi, I'm Jithu 👋</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300">Cybersecurity graduate passionate about defense, offense, and security innovation.</p>
+    </section>
+
+    <section class="my-16 gsap-fade">
+      <h3 class="text-3xl font-semibold mb-4">Projects</h3>
+      <div class="project-grid">
+        <div class="project-card">
+          <h4 class="text-xl font-bold mb-2">VAPT Report</h4>
+          <p>Conducted Vulnerability Assessment and Penetration Testing (VAPT) on websites and documented the findings.</p>
+        </div>
+        <div class="project-card">
+          <h4 class="text-xl font-bold mb-2">Splunk Log Monitoring</h4>
+          <p>Simulated RCE attack on WordPress and implemented advanced log monitoring using Splunk.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-16 gsap-fade">
+      <h3 class="text-3xl font-semibold mb-4">Testimonials</h3>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"Jithu is an extremely talented cybersecurity analyst with a passion for innovation."</p>
+          <span>– Former Mentor</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"His ability to identify and patch vulnerabilities is top-notch."</p>
+          <span>– Security Team Lead</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-16 gsap-fade">
+      <h3 class="text-3xl font-semibold mb-4">Latest Blogs</h3>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <h4 class="text-xl font-bold mb-2">How I Learned Ethical Hacking</h4>
+          <p>A journey from zero to executing real-world security audits.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="blog-card">
+          <h4 class="text-xl font-bold mb-2">CTF Tips for Beginners</h4>
+          <p>Essential tips to win your first Capture The Flag event.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-16 gsap-fade text-center">
+      <h3 class="text-2xl font-semibold mb-2">Contact Me</h3>
+      <form action="https://formspree.io/f/meozorwe" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
